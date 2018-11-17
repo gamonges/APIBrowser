@@ -16,6 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        let myFirstTab: UIViewController = NewsViewController()
+//        
+//        let myTabs = NSArray(object: myFirstTab)
+//        let myTabBarViewController: UITabBarController = UITabBarController()
+//        myTabBarViewController.setViewControllers(myTabs as? [UIViewController], animated: false)
+//        
+//        self.window = UIWindow(frame: UIScreen.main.bounds)
+//        self.window?.rootViewController = myTabBarViewController
+//        self.window?.makeKeyAndVisible()
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = MainTabBarViewController()
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 
